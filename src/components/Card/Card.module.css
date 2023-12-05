@@ -1,0 +1,64 @@
+.cardWrapper {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: skyblue;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 300px;
+}
+
+.dataWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+    gap: 1rem;
+}
+
+p {
+    margin: 0;
+}
+
+.dataName {
+    font-weight: bold;
+}
+
+.dataMood {
+    font-style: italic;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.editButton {
+    background-color: yellow;
+
+    &:hover {
+        border-color: black;
+    }
+}
+
+.deleteButton {
+    background-color: red;
+
+    &:hover {
+        border-color: black;
+    }
+}
+
+.dateWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
