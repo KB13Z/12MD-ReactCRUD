@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.nav {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+
+    &:hover {
+        color: grey;
+        transition: 0.4s;
+    }
+}

@@ -24,12 +24,17 @@ const Card: React.FC<CardProps> = ({ data, onDelete, onEdit }) => {
     const [isEditing, setEditing] = useState(false);
     const [editedData, setEditedData] = useState({ ...data });
 
+    useEffect(() => {
+        setEditedData({ ...data });
+      }, [data]);
+
     const handleEdit = () => {
         setEditing(true);
     };
 
     const handleSave = () => {
         onEdit(data.id, editedData);
+        setEditedData((prevData) => ({ ...prevData }));
         setEditing(false);
     };
 
@@ -73,11 +78,13 @@ const Card: React.FC<CardProps> = ({ data, onDelete, onEdit }) => {
         return () => clearInterval(intervalId);
       }, [data.createdAt]);
 
+      console.log('Image URL:', data.image);
+
     return (
         <div className={styles.cardWrapper}>
             <div className={styles.card}>
                 <div className="image-wrapper">
-                    <img src={data.image} alt="Random image" className="random-image" width={200} />
+                    <img src={data.image} alt="Random image" className={styles.randomImage} width={200} />
                 </div>
                 {isEditing ? (
                     <div className={styles.dataWrapper}>

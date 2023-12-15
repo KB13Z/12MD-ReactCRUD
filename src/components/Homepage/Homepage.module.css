@@ -1,0 +1,11 @@
+.homepageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 2rem;
+    color: black;
+}

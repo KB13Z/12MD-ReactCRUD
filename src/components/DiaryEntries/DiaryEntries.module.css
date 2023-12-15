@@ -1,0 +1,51 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.diaryEntriesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.goBackButtonWrapper {
+  text-align: right;
+}
+
+.goBackButton {
+  background-color: grey;
+
+    &:hover {
+        border-color: black;
+    }
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.previewImageWrapper {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: lightgoldenrodyellow;
+}
+
+.previewImage {
+  border-radius: 10px;
+}
